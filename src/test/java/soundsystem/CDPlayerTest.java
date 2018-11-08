@@ -17,6 +17,11 @@ public class CDPlayerTest {
   @Rule
   public final StandardOutputStreamLog log = new StandardOutputStreamLog();
 
+  /*
+  @Autowired不管是构造器、Setter方法还是其他的方法，Spring都会尝试满足方法
+参数上所声明的依赖。假如有且只有一个bean匹配依赖需求的话，那
+么这个bean将会被装配进来。
+   */
   @Autowired
   private MediaPlayer player;
 
